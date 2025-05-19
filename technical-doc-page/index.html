@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Basics Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Basics</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Variables_and_Types">Variables and Types</a>
+      <a class="nav-link" href="#Control_Flow">Control Flow</a>
+      <a class="nav-link" href="#Functions">Functions</a>
+      <a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a>
+      <button id="toggle-dark" aria-label="Toggle dark mode">
+        Dark Mode
+      </button>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          Python is a high-level, interpreted programming language known for its
+          simplicity and readability.
+        </p>
+        <p>
+          It supports multiple programming paradigms including procedural,
+          object-oriented, and functional programming.
+        </p>
+        <p>
+          Python is widely used in web development, data analysis, AI, and more.
+        </p>
+        <p>
+          Its syntax allows developers to express concepts in fewer lines of
+          code.
+        </p>
+        <p>
+          Python is open-source and has a large community contributing to its
+          ecosystem.
+        </p>
+        <code>print("Hello, world!")</code>
+        <code># This is a comment in Python</code>
+        <ul>
+          <li>Easy to learn</li>
+          <li>Open-source</li>
+          <li>Rich standard library</li>
+          <li>Cross-platform</li>
+          <li>Community support</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Variables_and_Types">
+        <header>Variables and Types</header>
+        <p>
+          Variables in Python do not require explicit declaration to reserve
+          memory space.
+        </p>
+        <p>The declaration happens automatically when you assign a value.</p>
+        <p>Python is dynamically typed, meaning variables can change type.</p>
+        <p>
+          Common data types include int, float, str, list, tuple, dict, and
+          bool.
+        </p>
+        <p>Use <span>type()</span> to check the type of a variable.</p>
+        <code>x = 5</code>
+        <code>name = "Alice"</code>
+        <ul>
+          <li>int</li>
+          <li>str</li>
+          <li>float</li>
+          <li>bool</li>
+          <li>list</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Control_Flow">
+        <header>Control Flow</header>
+        <p>
+          Python uses <span>if</span>, <span>elif</span>, and
+          <span>else</span> for conditional logic.
+        </p>
+        <p>Loops are used to repeat a block of code.</p>
+        <p>
+          <span>for</span> loops iterate over sequences, while
+          <span>while</span> loops execute as long as a condition is true.
+        </p>
+        <p>Python uses indentation instead of braces to define blocks.</p>
+        <p>
+          Use <span>break</span> and <span>continue</span> to control loop
+          behavior.
+        </p>
+        <code>if x > 0:</code>
+        <code>for i in range(5):</code>
+        <ul>
+          <li>if</li>
+          <li>elif</li>
+          <li>else</li>
+          <li>for</li>
+          <li>while</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          Functions are defined using the <span>def</span> keyword in Python.
+        </p>
+        <p>You can pass arguments and return values.</p>
+        <p>Functions help make code modular and reusable.</p>
+        <p>Default arguments and keyword arguments are supported.</p>
+        <p>Anonymous functions can be created with <span>lambda</span>.</p>
+        <code>def greet(name):</code>
+        <code>return "Hello " + name</code>
+        <ul>
+          <li>def</li>
+          <li>return</li>
+          <li>arguments</li>
+          <li>lambda</li>
+          <li>modularity</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Modules_and_Packages">
+        <header>Modules and Packages</header>
+        <p>Modules are Python files with reusable code.</p>
+        <p>
+          Packages are directories containing multiple modules and an
+          <span>__init__.py</span> file.
+        </p>
+        <p>Use <span>import</span> to include modules in your code.</p>
+        <p>
+          You can create your own modules or use built-in ones like
+          <span>math</span> or <span>os</span>.
+        </p>
+        <p>Third-party packages can be installed via <span>pip</span>.</p>
+        <code>import math</code>
+        <code>from datetime import datetime</code>
+        <ul>
+          <li>import</li>
+          <li>from ... import ...</li>
+          <li>pip</li>
+          <li>__init__.py</li>
+          <li>reuse code</li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      const toggleButton = document.getElementById("toggle-dark");
+      const body = document.body;
+
+      // Load saved mode
+      if (localStorage.getItem("dark-mode") === "true") {
+        body.classList.add("dark-mode");
+        toggleButton.textContent = "Light Mode";
+      }
+
+      toggleButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const dark = body.classList.contains("dark-mode");
+        toggleButton.textContent = dark ? "Light Mode" : "Dark Mode";
+        localStorage.setItem("dark-mode", dark);
+      });
+    </script>
+  </body>
+</html>
