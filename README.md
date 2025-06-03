@@ -1,6 +1,8 @@
-## Technical Documentation Page
-Throughout the Responsive Web Design course, there are some projects that is required to complete in order to earn the certification.
-This is the third required project and for this project, I built a technical documentation page to serve as instruction or reference for a topic.
+## [Technical Documentation Page](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page)
+This is one of the required projects to earn the [Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/) from freeCodeCamp.
+For this project, you will build a technical documentation page to serve as instruction or reference for a topic.
+
+---
 
 **Objective**: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks. Do not copy this demo project.
 
@@ -24,5 +26,3 @@ This is the third required project and for this project, I built a technical doc
 Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
 
 **Note**: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
-
-[Responsive Web Design - Technical Documentation Page](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page)
